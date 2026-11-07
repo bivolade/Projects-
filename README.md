@@ -199,14 +199,6 @@ Some areas I plan to explore:
 
 ---
 
-## 📫 Connect With Me
-
-I'm always interested in connecting with other students, cybersecurity professionals and people working in the technology industry.
-
-**LinkedIn:** [Your LinkedIn]
-
-**GitHub:** [Your GitHub]
-
 ---
 
 ⭐ Thanks for checking out my projects!
