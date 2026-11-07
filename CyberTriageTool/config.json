@@ -1,0 +1,15 @@
+{
+  "vt_api_key_env": "VT_API_KEY",
+  "suspicious_file": "sample_output/suspicious_sample.bin",
+
+  "powershell_script": "powershell/collect_triage.ps1",
+  "triage_output_dir": "sample_output",
+  "host_info_json": "sample_output/host_info.json",
+
+  "timeout_seconds": 30,
+
+  "log_file": "sample_output/auth.log",
+  "scan_target": "127.0.0.1",
+  "scan_ports": [22, 80, 443, 3389],
+  "max_geo_ips": 10
+}
