@@ -1,0 +1,86 @@
+﻿
+SECURITY INVESTIGATION REPORT
+Generated: 04/14/2026 23:33:10
+
+SUMMARY
+Total Alerts Found: 67
+
+DETAILED FINDINGS
+
+[1] BRUTE FORCE | HIGH | auth.log | IP: 122.190.143.18 | 7 failed attempts
+[2] BRUTE FORCE | HIGH | auth.log | IP: 179.38.76.250 | 7 failed attempts
+[3] BRUTE FORCE | HIGH | auth.log | IP: 58.19.144.50 | 7 failed attempts
+[4] BRUTE FORCE | HIGH | auth.log | IP: 123.153.146.183 | 7 failed attempts
+[5] BRUTE FORCE | HIGH | auth.log | IP: 49.84.87.84 | 7 failed attempts
+[6] BRUTE FORCE | HIGH | auth.log | IP: 78.106.21.86 | 7 failed attempts
+[7] BRUTE FORCE | HIGH | auth.log | IP: 114.32.100.101 | 7 failed attempts
+[8] BRUTE FORCE | HIGH | auth.log | IP: 186.133.159.181 | 5 failed attempts
+[9] BRUTE FORCE | HIGH | auth.log | IP: 125.107.136.165 | 7 failed attempts
+[10] BRUTE FORCE | HIGH | auth.log | IP: 1.30.211.144 | 7 failed attempts
+[11] BRUTE FORCE | HIGH | auth.log | IP: 77.231.252.103 | 5 failed attempts
+[12] BRUTE FORCE | HIGH | auth.log | IP: 49.4.143.105 | 60 failed attempts
+[13] BRUTE FORCE | HIGH | auth.log | IP: 61.183.117.250 | 7 failed attempts
+[14] BRUTE FORCE | HIGH | auth.log | IP: 123.96.5.168 | 7 failed attempts
+[15] BRUTE FORCE | HIGH | auth.log | IP: 111.40.30.206 | 7 failed attempts
+[16] BRUTE FORCE | HIGH | auth.log | IP: 119.193.140.176 | 7 failed attempts
+[17] BRUTE FORCE | HIGH | auth.log | IP: 112.251.168.248 | 7 failed attempts
+[18] BRUTE FORCE | HIGH | auth.log | IP: 183.93.253.159 | 7 failed attempts
+[19] BRUTE FORCE | HIGH | auth.log | IP: 183.146.159.20 | 7 failed attempts
+[20] BRUTE FORCE | HIGH | auth.log | IP: 46.30.160.83 | 7 failed attempts
+[21] BRUTE FORCE | HIGH | auth.log | IP: 223.244.185.76 | 7 failed attempts
+[22] BRUTE FORCE | HIGH | auth.log | IP: 181.25.206.27 | 14 failed attempts
+[23] BRUTE FORCE | HIGH | auth.log | IP: 181.25.189.115 | 7 failed attempts
+[24] BRUTE FORCE | HIGH | auth.log | IP: 122.163.61.218 | 35 failed attempts
+[25] BRUTE FORCE | HIGH | auth.log | IP: 181.25.201.155 | 10 failed attempts
+[26] BRUTE FORCE | HIGH | auth.log | IP: 181.26.186.35 | 32 failed attempts
+[27] BRUTE FORCE | HIGH | auth.log | IP: 183.152.79.79 | 7 failed attempts
+[28] BRUTE FORCE | HIGH | auth.log | IP: 42.184.142.151 | 7 failed attempts
+[29] BRUTE FORCE | HIGH | auth.log | IP: 34.204.227.175 | 43 failed attempts
+[30] BRUTE FORCE | HIGH | auth.log | IP: 61.166.73.66 | 7 failed attempts
+[31] BRUTE FORCE | HIGH | auth.log | IP: 177.38.145.209 | 7 failed attempts
+[32] BRUTE FORCE | HIGH | auth.log | IP: 221.194.44.190 | 6 failed attempts
+[33] BRUTE FORCE | HIGH | auth.log | IP: 122.189.198.238 | 7 failed attempts
+[34] BRUTE FORCE | HIGH | auth.log | IP: 103.230.120.26 | 7 failed attempts
+[35] BRUTE FORCE | HIGH | auth.log | IP: 60.187.118.40 | 7 failed attempts
+[36] BRUTE FORCE | HIGH | auth.log | IP: 190.178.62.6 | 5 failed attempts
+[37] BRUTE FORCE | HIGH | auth.log | IP: 175.162.187.121 | 7 failed attempts
+[38] BRUTE FORCE | HIGH | auth.log | IP: 24.151.103.17 | 157 failed attempts
+[39] BRUTE FORCE | HIGH | auth.log | IP: 93.120.176.237 | 7 failed attempts
+[40] BRUTE FORCE | HIGH | auth.log | IP: 85.245.107.41 | 11 failed attempts
+[41] BRUTE FORCE | HIGH | auth.log | IP: 182.243.87.6 | 7 failed attempts
+[42] BRUTE FORCE | HIGH | auth.log | IP: 111.40.166.130 | 7 failed attempts
+[43] BRUTE FORCE | HIGH | auth.log | IP: 178.219.248.139 | 7 failed attempts
+[44] BRUTE FORCE | HIGH | auth.log | IP: 201.178.81.113 | 38 failed attempts
+[45] BRUTE FORCE | HIGH | auth.log | IP: 110.78.174.75 | 7 failed attempts
+[46] BRUTE FORCE | HIGH | auth.log | IP: 14.54.210.101 | 14 failed attempts
+[47] BRUTE FORCE | HIGH | auth.log | IP: 222.186.56.220 | 8 failed attempts
+[48] BRUTE FORCE | HIGH | auth.log | IP: 105.101.221.33 | 7 failed attempts
+[49] BRUTE FORCE | HIGH | auth.log | IP: 46.89.129.145 | 7 failed attempts
+[50] BRUTE FORCE | HIGH | auth.log | IP: 82.64.2.59 | 7 failed attempts
+[51] SUSPICIOUS PS | HIGH | powershell_log.txt | Pattern: EncodedCommand
+[52] SUSPICIOUS PS | MEDIUM | powershell_log.txt | Pattern: whoami
+[53] SUSPICIOUS PS | MEDIUM | powershell_log.txt | Pattern: ipconfig
+[54] SUSPICIOUS PS | MEDIUM | powershell_log.txt | Pattern: net user
+[55] SUSPICIOUS PS | MEDIUM | powershell_log.txt | Pattern: Invoke-WebRequest
+[56] SUSPICIOUS PS | MEDIUM | powershell_log.txt | Pattern: Invoke-WebRequest
+[57] SUSPICIOUS PS | MEDIUM | powershell_log.txt | Pattern: Invoke-WebRequest
+[58] DATA EXFILTRATION | CRITICAL | powershell_log.txt | Archive + Upload pattern detected
+[59] IOC MATCH | HIGH | access.log | IP: 198.51.100.8 accessed malicious path: /wp-admin
+[60] IOC MATCH | HIGH | access.log | IP: 203.0.113.5 accessed malicious path: /phpmyadmin
+[61] IOC MATCH | HIGH | access.log | IP: 203.0.113.5 accessed malicious path: /admin
+[62] ADMIN PATH ACCESS | MEDIUM | access.log | IP: 203.0.113.5
+[63] ADMIN PATH ACCESS | MEDIUM | access.log | IP: 203.0.113.5
+[64] ADMIN PATH ACCESS | MEDIUM | access.log | IP: 203.0.113.5
+[65] ADMIN PATH ACCESS | MEDIUM | access.log | IP: 198.51.100.8
+[66] ADMIN PATH ACCESS | MEDIUM | access.log | IP: 198.51.100.8
+[67] ADMIN PATH ACCESS | MEDIUM | access.log | IP: 198.51.100.8
+
+RECOMMENDATIONS
+
+1. Block all IPs identified in brute force attacks
+2. Investigate all PowerShell suspicious activities
+3. Check if any IOC indicators led to successful compromise
+4. Review web logs for successful exploitation of admin paths
+5. Implement IP blocking for repeat offenders
+
+END OF REPORT
